@@ -54,12 +54,13 @@ public class ViewPrincipal extends JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(153, 153, 153));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Controle de Estoque");
+        jLabel1.setText("SisEstoque - Controle de Estoque");
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setLayout(new java.awt.GridLayout(1, 0));
 
-        jbUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-user-80.png"))); // NOI18N
-        jbUsuario.setText("Usuários");
+        jbUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/usuarios.png"))); // NOI18N
+        jbUsuario.setText("Cadastrar Usuários");
         jbUsuario.setPreferredSize(new java.awt.Dimension(210, 80));
         jbUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,8 +69,8 @@ public class ViewPrincipal extends JFrame {
         });
         jPanel1.add(jbUsuario);
 
-        jbProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-produto-80.png"))); // NOI18N
-        jbProduto.setText("Produtos");
+        jbProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/produtos.png"))); // NOI18N
+        jbProduto.setText("Cadastrar Produtos");
         jbProduto.setPreferredSize(new java.awt.Dimension(210, 80));
         jbProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,7 +79,7 @@ public class ViewPrincipal extends JFrame {
         });
         jPanel1.add(jbProduto);
 
-        jbEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-movimento-de-estoque-80.png"))); // NOI18N
+        jbEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/movimento-de-estoque.png"))); // NOI18N
         jbEstoque.setText("Estoque");
         jbEstoque.setPreferredSize(new java.awt.Dimension(210, 80));
         jbEstoque.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +89,7 @@ public class ViewPrincipal extends JFrame {
         });
         jPanel1.add(jbEstoque);
 
-        jbSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-desligar-80.png"))); // NOI18N
+        jbSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/sair.png"))); // NOI18N
         jbSair.setText("Sair");
         jbSair.setPreferredSize(new java.awt.Dimension(210, 80));
         jbSair.addActionListener(new java.awt.event.ActionListener() {
@@ -114,7 +115,7 @@ public class ViewPrincipal extends JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 319, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 324, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );

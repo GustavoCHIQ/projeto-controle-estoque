@@ -1,6 +1,7 @@
 package view;
 
 import controller.ControllerUsuario;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import model.ModelSessaoUsuario;
 import model.ModelUsuario;
@@ -10,7 +11,7 @@ import sistema.Mensagens;
  *
  * @author gustavo
  */
-public class ViewLogin extends javax.swing.JFrame {
+public class ViewLogin extends JFrame {
 
     private ModelUsuario modelUsuario = new ModelUsuario();
     private final ControllerUsuario CONTROLLER_USUARIO = new ControllerUsuario();
@@ -30,6 +31,8 @@ public class ViewLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jtfLogin = new javax.swing.JTextField();
@@ -38,6 +41,8 @@ public class ViewLogin extends javax.swing.JFrame {
         jtfSenha = new javax.swing.JPasswordField();
         jbSair = new javax.swing.JButton();
         jbEntrar = new javax.swing.JButton();
+
+        jScrollPane1.setViewportView(jTextPane1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login - Controle de Estoque");
@@ -73,7 +78,7 @@ public class ViewLogin extends javax.swing.JFrame {
 
         jbSair.setBackground(new java.awt.Color(255, 153, 153));
         jbSair.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jbSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-desligar-20.png"))); // NOI18N
+        jbSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/fechar.png"))); // NOI18N
         jbSair.setText("Sair");
         jbSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,7 +88,7 @@ public class ViewLogin extends javax.swing.JFrame {
 
         jbEntrar.setBackground(new java.awt.Color(0, 204, 153));
         jbEntrar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jbEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-entrar-25.png"))); // NOI18N
+        jbEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/entrar.png"))); // NOI18N
         jbEntrar.setText("Entrar");
         jbEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,8 +116,7 @@ public class ViewLogin extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jbSair, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jbEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(jbEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(131, 131, 131))
         );
         jPanel1Layout.setVerticalGroup(
@@ -135,7 +139,7 @@ public class ViewLogin extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jbEntrar)
                             .addComponent(jbSair))))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -224,6 +228,8 @@ public class ViewLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JButton jbEntrar;
     private javax.swing.JButton jbSair;
     private javax.swing.JTextField jtfLogin;

@@ -4,6 +4,7 @@ import controller.ControllerEstoque;
 import controller.ControllerEstoqueProdutoUsuario;
 import controller.ControllerProduto;
 import java.util.ArrayList;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
@@ -20,7 +21,7 @@ import util.Formatador;
  *
  * @author gustavo
  */
-public class ViewEstoque extends javax.swing.JFrame {
+public class ViewEstoque extends JFrame {
 
     private ModelProduto modelProduto = new ModelProduto();
     private ArrayList<ModelProduto> listaModelProdutos = new ArrayList<>();
@@ -83,7 +84,7 @@ public class ViewEstoque extends javax.swing.JFrame {
         jLabel3.setText("Valor");
 
         jbSalvar.setBackground(new java.awt.Color(0, 153, 102));
-        jbSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-salvar-20.png"))); // NOI18N
+        jbSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/salvar.png"))); // NOI18N
         jbSalvar.setText("Executar");
         jbSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -227,7 +228,7 @@ public class ViewEstoque extends javax.swing.JFrame {
                     .addComponent(jcbPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

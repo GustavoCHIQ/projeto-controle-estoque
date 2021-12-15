@@ -3,6 +3,7 @@ package view;
 import controller.ControllerEstoqueProdutoUsuario;
 import controller.ControllerProduto;
 import java.util.ArrayList;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
@@ -15,7 +16,7 @@ import util.Formatador;
  *
  * @author gustavo
  */
-public class ViewProduto extends javax.swing.JFrame {
+public class ViewProduto extends JFrame {
 
     private ModelProduto modelProduto = new ModelProduto();
     private ArrayList<ModelProduto> listaModelProdutos = new ArrayList<>();
@@ -73,7 +74,7 @@ public class ViewProduto extends javax.swing.JFrame {
         jtfValor.setToolTipText("Zero ou maior");
 
         jbSalvar.setBackground(new java.awt.Color(0, 153, 102));
-        jbSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-salvar-20.png"))); // NOI18N
+        jbSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/salvar.png"))); // NOI18N
         jbSalvar.setText("Salvar");
         jbSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +114,7 @@ public class ViewProduto extends javax.swing.JFrame {
             jtProdutos.getColumnModel().getColumn(3).setMaxWidth(100);
         }
 
-        jbLimpar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-vassoura-20.png"))); // NOI18N
+        jbLimpar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/limpar.png"))); // NOI18N
         jbLimpar.setText("Limpar");
         jbLimpar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,7 +122,7 @@ public class ViewProduto extends javax.swing.JFrame {
             }
         });
 
-        jbExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-lixo-20.png"))); // NOI18N
+        jbExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/apagar.png"))); // NOI18N
         jbExcluir.setText("Excluir");
         jbExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +130,7 @@ public class ViewProduto extends javax.swing.JFrame {
             }
         });
 
-        jbAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/icons8-editar-20.png"))); // NOI18N
+        jbAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botoes/editar.png"))); // NOI18N
         jbAlterar.setText("Alterar");
         jbAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -189,7 +190,7 @@ public class ViewProduto extends javax.swing.JFrame {
                 .addGap(11, 11, 11)
                 .addComponent(jbSalvar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbLimpar)
